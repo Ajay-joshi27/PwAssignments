@@ -1,0 +1,65 @@
+ 1Q    what are thhe primitive data types in java?
+ans  byte
+     short
+     int 
+     long
+     float
+     double
+     boolean
+  ========================================================================================================================================================================================  
+2Q   what are identifiers in java?
+ans   Identifiers in Java are symbolic names used for identification
+   1)   They must start with a letter, an underscore (_), or a dollar sign ($). They cannot start with a         digit12.
+    2)They can only contain letters, digits, underscores, and dollar signs. They cannot contain any other   characters, such as spaces, symbols, or punctuation marks12.  
+    3)They are case-sensitive, meaning that myVariable and MyVariable are different identifiers12.
+    4)They cannot be any of the reserved words in Java, such as int, if, class, etc12.
+    There are 53 reserved words in Java, which have special meanings and functions in the language.
+ ========================================================================================================================================================================================
+3Q   what is final class in java? 
+
+ans  A final class in Java is a class that is declared with the final keyword. This means that the class cannot be extended or inherited by any other class. 
+ ========================================================================================================================================================================================
+4Q   what are the two ways tto make a class final?
+ans  Declaring the class itself as final: When you declare a class with the final keyword, it means that the class cannot be subclassed or extended. 
+
+      Making specific methods final: You can also mark individual methods within a class as final. This means that these methods cannot be overridden by subclasses
+ ========================================================================================================================================================================================
+5Q   CAN WE CRATE A INSTANCE OF A FINAL CLASS IN ANOTHER CLASS?
+ANS   YES  WE CRATE A INSTANCE OF A FINAL CLASS IN ANOTHER CLASS.
+ ========================================================================================================================================================================================
+6Q   what is volatile keyword used for?
+ANS  In Java, the volatile keyword is used to indicate that a variable may be modified asynchronously by multiple threads.
+       It ensures that when a thread reads a volatile variable,
+      it   always gets the most recent value written to it by any other thread.
+ ========================================================================================================================================================================================
+
+7Q   WHAT IS THE USE OF TRANSIENT KEYWORD?
+ANS  In Java, the transient keyword is used to indicate that a variable should not be serialized when the object containing it is serialized.
+         Serialization is the process of converting an  object into a stream of bytes, which can be persisted to a file, sent over a network, or stored in a database.
+
+ ========================================================================================================================================================================================
+
+8Q   WHAT  ARE THE TYPES OF CASTING ?
+ ans  primitive type==   When the data is casted from one primitive type ( like int, float, double to another 
+                         primitive type, then it is called primitive casting
+
+   derived casting == When the data is casted from one derived type to another derived type, then it is called 
+                      derived casting. 
+ ========================================================================================================================================================================================
+
+9Q   WHAT IS BOXING AND UNBOXING ?
+ANS   Boxing: ==It's the process of converting a primitive type into its equivalent wrapper class.
+
+       nboxing ==It's the reverse process of converting an object of a wrapper class to its corresponding primitive type. 
+ ========================================================================================================================================================================================
+10Q   DIFFERENCE BETWEEN KEYWORD LITERAL IDENTIFEERR IN JAVA  ?
+ANS    Keywords: These are reserved words in Java that have predefined meanings and functionalities. They are part of the language syntax and cannot be used as identifiers
+      (such as   variable names or method names). Examples of keywords include class, public, static, void, if, else, for, etc. 
+      
+       Literals: These are constant values that are directly used in the code. They represent fixed values and can be of various types, such as numeric literals
+          (integers, floating-point numbers), string literals, character literals, boolean literals, etc
+
+
+      Identifiers: These are names given to variables, methods, classes, etc., created by the programmer. 
+      Identifiers are user-defined and used to represent various elements in the code.   They must follow certain rules,
+       such as starting with a letter, underscore, or dollar sign, and    can contain letters, digits, underscores, and dollar signs. Identifiers cannot be the same as keywords.
