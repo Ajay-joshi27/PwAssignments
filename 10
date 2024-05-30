@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Password Strength in jQuery</title>
+
+<style type="text/css">
+
+#passwordForm (
+
+width: 30%; margin: 30px auto;
+
+#password width: 100%;
+
+height: 35px;
+
+font-size: 16px;
+
+padding: 3px;
+
+margin-bottom: 10px;
+
+#passwordStrength (
+
+width: 100%;
+
+padding: 10px;
+
+border-radius: 7px;
+
+strong
+
+color: #0a3622:
+
+background-color: #dle7dd;
+
+border: 1px solid #0a3622:
+
+medium (
+
+color: #664d03:
+
+background-color: #fff3cd;
+
+border: 1px solid #664d03:
+
+weak
+
+color: #58151c;
+
+background-color: #f8d7da;
+
+border: 1px solid #58151c;
+
+</style>
+
+</head>
+
+<body>
+
+<form id="passwordForm">
+
+<label for="password">Create a Password:</label>
+
+<input type="password" id="password">
+
+<div id="passwordStrength"></div>
+
+</form>
+<script src="jquery-3.7.1.min.js"></script>
+<script>
+
+$(function ()(
+
+$("#password").keyup(function(){
+
+var password $(this).val();
+
+var uppercaseLetters/[A-Z]/
+
+var lowercaseLetters = [a-z]/;
+
+var special Characters/[-._!#%&@{}-{$\(\)\*\+\\\\?\[\]\^{{]+/;
+
+var numbers/[0-9]/;
+
+if (password.length <8) (
+
+$("#passwordStrength").attr("class", "weak");
+
+S(#passwordStrength').html("Weak password (should be atleast 8 characters).");
+
+else (
+
+if (password.match(numbers) && password.match(uppercase Letters) && password.match(lowercaseLetters) && password.match(specialCharacters)) {
+
+$('#password Strength').attr("class", "strong");
+
+$('#passwordStrength').html("Strong password");
+
+}
+
+else if (lowercaseLetters.test(password) uppercasel.etters.test(password)^ numbers.test(password)) (.
+
+$('#passwordStrength').attr("class"; "weak");
+
+$t password Strength aimi Weak password (Include upper and lowercase letters numbers, and special characters).");
+
+else {
+
+$('#passwordStrength').attr("class", "medium");
+
+$('#passwordStrength').html("Medium strength (Include upper and lowercase letters, numbers, and special characters).");
+
+1
+
+});
+
+</script>
+
+</body>
+
+</html>
