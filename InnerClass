@@ -1,0 +1,22 @@
+class PopCorn{
+    public   void taste(){
+        System.out.println("spicy");
+    }
+}
+public class Test {
+    public static void main(String[] args) {
+      PopCorn p=new PopCorn(){
+          @Override
+          public void taste() {
+              //super.taste();
+               System.out.println("salty");
+               brandName();
+          }
+          public void brandName(){
+              System.out.println("McStan");
+          }
+      };
+        p.taste();
+      //  PopCorn.taste(); // for this execute we should use static class
+    }
+}
