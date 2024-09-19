@@ -15,7 +15,7 @@ public class Test {
           public void brandName(){
               System.out.println("McStan");
           }
-      };
+      };   
         p.taste();
       //  PopCorn.taste(); // for this execute we should use static class
     }
