@@ -10,7 +10,7 @@
 
 <title>Password Strength in jQuery</title>
 
-<style type="text/css">
+<style type="text/css"> 
 
 #passwordForm (
 
