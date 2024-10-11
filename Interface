@@ -1,0 +1,58 @@
+
+
+interface  Calculatorimpl1
+{
+	void add(int a,int b);
+	void mul(int a,int b);
+
+}
+ interface  Calculatorimpl2
+{
+	void sub(int a,int b);
+	void div(int a,int b);
+}
+
+class Calculator implements Calculatorimpl1,Calculatorimpl2
+{
+	@Override
+	public void add(int a,int b)
+		{
+		int add=a+b;
+           System.out.println("adding"+add);
+		}
+
+@Override
+	public void mul(int a,int b)
+	{
+		int mul=a*b;
+		 System.out.println("multiplying"+mul);
+	}
+	@Override
+		public void sub(int a,int b)
+	{
+			int sub=a-b;
+			System.out.println("substraction"+sub);
+	}
+@Override
+	public void div(int a,int b)
+	{
+		int div=a/b;
+		System.out.println("division"+div);
+	}
+}
+
+
+
+public class Demo 
+{
+	public static void main(String[] args) 
+	{
+		Calculator calc;
+		calc=new Calculator();
+		calc.add(1,2);
+		calc.sub(2,1);
+		calc.mul(2,2);
+		calc.div(5,50);
+		
+	}
+}
