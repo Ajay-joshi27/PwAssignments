@@ -8,6 +8,7 @@ public class Test {
       PopCorn p=new PopCorn(){
           @Override
           public void taste() {
+
               //super.taste();
                System.out.println("salty");
                brandName();
