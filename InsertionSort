@@ -7,7 +7,7 @@ public class Example {
         System.out.println("enter the size of the array");
         int n = sc.nextInt();
 
-        //create an array of size n
+        //create an array of size n 
         int[] arr = new int[n];
         for (int i = 0; i <= n-1; i++) {
             System.out.println("Enter the array element");
