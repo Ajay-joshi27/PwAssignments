@@ -5,7 +5,7 @@ class PopCorn{
 }
 public class Test {
     public static void main(String[] args) {
-      PopCorn p=new PopCorn(){
+      PopCorn p=new PopCorn(){ 
           @Override
           public void taste() {
 
