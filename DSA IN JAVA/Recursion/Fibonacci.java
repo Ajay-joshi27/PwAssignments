@@ -5,7 +5,7 @@ Fibonacci Series using Recursion
 class GfG {
     static int nthFibonacci(int n){ 
         // Base case: if n is 0 or 1, return n
-        if (n <= 1) {
+        if (n <= 1) { 
             return n;
         }
         // Recursive case: sum of the two preceding 
