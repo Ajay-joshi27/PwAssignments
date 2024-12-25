@@ -15,7 +15,7 @@ public class starrectangle {
             }
             }
             System.out.println();
-
+ 
         }
     }
 }
